@@ -31,7 +31,7 @@
 
 <section class="hero">
   <div class="hero-body">
-    <div class="container is-max-desktop">
+    <div class="container is-fullhd">
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Iterative Keypoint Reward: Multi-Step Robotic Manipulation through Real-to-Sim-to-Real</h1>
@@ -95,7 +95,49 @@
 </section>
 
 <section class="hero teaser">
-</section>
+  <div class="container is-max-widescreen">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered  is-centered">
+          <!-- <video id="teaser" autoplay muted loop controls height="100%" width="100%">
+            <source src="static/videos/teaser.mp4"
+                    type="video/mp4"> -->
+          </video>
+          </br>
+        </div>
+        <br>
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+    </div>
+  </div>
+
+<div class="container is-max-widescreen">
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Abstract</h2>
+    <div class="content has-text-justified">
+      <p>
+        Task specification for robotic manipulation in open-world environments is inherently challenging. 
+        Importantly, this process requires flexible and adaptive objectives that align with human intentions 
+        and can evolve through iterative feedback. We introduce \algname (\algabrvname), a framework that 
+        leverages VLMs to generate and refine visually grounded reward functions serving as dynamic task 
+        specifications for multi-step manipulation tasks. Given RGB-D observations and free-form language 
+        instructions, \algabrvname samples keypoints from the scene and utilizes VLMs to generate Python-based 
+        reward functions conditioned on these keypoints. These functions operate on the spatial relationships 
+        between keypoints, enabling precise SE(3) control and leveraging VLMs as proxies to encode human 
+        priors about robotic behaviors. We reconstruct real-world scenes in simulation and use the generated 
+        rewards to train reinforcement learning policies, which are then deployed into the real world—forming 
+        a real-to-sim-to-real loop. Our approach demonstrates notable capabilities across diverse scenarios, 
+        including both prehensile and non-prehensile tasks, showcasing multi-step task execution, spontaneous 
+        error recovery, and on-the-fly strategy adjustments. The results highlight \algabrvname's effectiveness 
+        in enabling robots to perform multi-step tasks in dynamic environments through iterative reward shaping 
+        and minimal interaction.
+      </p>
+    </div>
+  </div>
+</div>
+
 
 
 <section class="hero is-light is-small">
@@ -104,35 +146,6 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: rewrite abstract -->
-          Specifying reward functions for open-world manipulation tasks in reinforcement learning is a 
-          longstanding challenge due to the need to interpret open-ended instructions and translate them 
-          into optimizable objectives with rich world knowledge. We introduce \algname (\algabrvname), 
-          a visually grounded reward representation that is automatically synthesized and refined by 
-          Vision-Language Models (VLMs) for open-world manipulation. Given an RGB-D observation and a 
-          free-form language instruction, our method samples keypoints in the scene and leverages VLMs' 
-          visual code-generation capabilities to produce Python-based reward functions conditioned on 
-          these keypoints. These keypoints capture rich geometric structures, encoding full SE(3) 
-          requirements, and enable diverse task objectives by tapping into VLMs' embedded world knowledge. 
-          VLMs act as proxies for human behavioral priors, shaping rewards for complex, multi-stage tasks 
-          and refining them iteratively based on embodied feedback. We implement a real-to-sim-to-real 
-          framework by transferring 3D meshes of real-world objects into simulation, training policies 
-          using the generated reward functions, and deploying them back into the real world. Our approach 
-          demonstrates efficacy across diverse scenarios, including both prehensile and non-prehensile 
-          tasks. Quantitative and qualitative evaluations show the system's ability to autonomously 
-          perform complex, long-horizon tasks with human-like capabilities such as multi-step chaining, 
-          spontaneous error recovery, and on-the-fly strategy updates. This work provides a scalable 
-          solution for automatically generating and refining reward functions for open-world manipulation 
-          tasks, bridging simulation and reality, and leveraging VLMs for nuanced control and adaptability.
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
 
     <!-- TODO: Paper video. -->
     <div class="columns is-centered has-text-centered">
@@ -165,11 +178,11 @@
   
   <div class="columns">
     <div class="column has-text-centered">
-      <video id="dist1"
+      <!-- <video id="dist1"
         controls autoplay loop muted
         width="100%">
         <source src="static/videos/skill_chaining.mp4" 
-        type="video/mp4">
+        type="video/mp4"> -->
       </video>
     </div>
   </div>
@@ -184,11 +197,11 @@
   
   <div class="columns">
     <div class="column has-text-centered">
-      <video id="dist1"
+      <!-- <video id="dist1"
         controls autoplay loop muted
         width="100%">
         <source src="static/videos/human_intervention.mp4" 
-        type="video/mp4">
+        type="video/mp4"> -->
       </video>
     </div>
   </div>
@@ -203,11 +216,11 @@
   
   <div class="columns">
     <div class="column has-text-centered">
-      <video id="dist1"
+      <!-- <video id="dist1"
         controls autoplay loop muted
         width="100%">
         <source src="static/videos/minor_adjustment.mp4" 
-        type="video/mp4">
+        type="video/mp4"> -->
       </video>
     </div>
   </div>
@@ -222,11 +235,11 @@
   
   <div class="columns">
     <div class="column has-text-centered">
-      <video id="dist1"
+      <!-- <video id="dist1"
         controls autoplay loop muted
         width="100%">
         <source src="static/videos/human_intervention.mp4" 
-        type="video/mp4">
+        type="video/mp4"> -->
       </video>
     </div>
   </div>
@@ -241,11 +254,11 @@
   
   <div class="columns">
     <div class="column has-text-centered">
-      <video id="dist1"
+      <!-- <video id="dist1"
         controls autoplay loop muted
         width="100%">
         <source src="static/videos/replanning.mp4" 
-        type="video/mp4">
+        type="video/mp4"> -->
       </video>
     </div>
   </div>
